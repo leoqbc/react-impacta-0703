@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lembrando do JS</title>
+</head>
+
+<script>
+    // jQuery
+    // $(document).ready(function () {
+    //
+    // });
+
+    // JS
+    // forma mais dolorosa
+    window.onload = function () {
+        // VanillaJS -> termo para o javascript classico antigo
+        // selecionar -> definir o evento -> programar ação
+
+        // DOM - um seleção
+        var button = document.getElementById("btn-clique");
+
+        var lista = document.getElementById("lista");
+
+        // colocando função em evento
+        button.onclick = function () {
+            // teste para progradores verem algo no console
+            // console.log('Clicou no botão');
+            // altera o style
+            // document.body.style.background = "#000000";
+
+            // limpando a lista
+            // lista.innerHTML = ''; // <ul>...</ul>
+
+            // lista.innerHTML += '<li>Novo elemento</li>';
+            // lista.innerHTML = lista.innerHTML + '<li>Novo elemento</li>';
+
+            var li = document.createElement('li');
+
+            li.innerText = 'Um texto aqui';
+            
+            li.onclick = function() {
+                alert('Clicou no li');
+            };
+
+            li.style.color = "#2AE";
+
+            lista.appendChild(li);
+        };
+
+        // on**** - evento - só funciona em elemento seleciado
+        // button.onmouseenter = function () {
+        //     // teste para progradores verem algo no console
+        //     // console.log('Clicou no botão');
+        //     document.body.style.background = "#000000";
+        // };
+    };
+</script>
+
+<body>
+
+    <h1>Programinha simple em JS</h1>
+
+    <div>
+        <button id="btn-clique">Clique me</button>
+    </div>
+
+    <ul id="lista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+    </ul>
+
+</body>
+
+</html>
