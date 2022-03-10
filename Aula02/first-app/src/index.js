@@ -1,17 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// primeiro precisamos importar o React
+// no arquivo de entrada
+import React from "react";
 
+// importando o react para o DOM
+// DOM = navegado (componentes de navegador)
+import ReactDOM from "react-dom";
+
+import App from "./App";
+
+// <App /> podemos usa-lo porque temos uma classe 
+// App extends Component
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <App />, 
+  document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Regras JSX:
+// toda tag precisa fechar
+// <br />
+// <section>asdasda</section>
+// <img src="caminho" />
+
+// Boa prática
+// <MeuComponent />
+// <MeuComponent>Conteudo</MeuComponent>
+
+// Todo código JSX(HTML) deve ser único em seu início
+
+// nunca pode ter mais de uma tag retornando ao mesmo tempo
+// <section>
+//  <div></div>
+//  <div></div>
+// </section>
