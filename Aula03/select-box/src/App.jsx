@@ -1,11 +1,21 @@
 import { Component } from "react";
+import Select from "./components/Select";
 
 export default class App extends Component {
+    constructor(props) {
+        super(props);
+        this.estados = ['SP', 'RJ'];
+        this.sp = ['São Paulo', 'Sorocaba', 'Guarulhos'];
+        this.pr = ['Curitiba', 'Londrina', 'Cascavel'];
+    }
+
     render() {
         return (
-            <select>
-                <option value="valor1">Valor1</option>
-            </select>
+            <div>
+                <Select options={this.estados} />
+                <Select options={this.sp} />
+                <Select options={this.pr} />
+            </div>
         );
     }
 }

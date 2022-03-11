@@ -3,7 +3,7 @@
 import { Component } from "react";
 import ListaAlunos from "./ListaAlunos";
 import Aluno from "./Aluno";
-import alunos from "./clientes";
+import clientes from "./clientes";
 
 class App extends Component {
     render() {
@@ -13,7 +13,7 @@ class App extends Component {
                     Minha primeira aplicação
                 </h1>
                 <ListaAlunos>
-                    {alunos.map(aluno => 
+                    {clientes.map(aluno => 
                                 <Aluno 
                                     nome={aluno.nome}
                                     email={aluno.email}

@@ -1,0 +1,14 @@
+body {
+    background-color: #424242;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #8aa192;
+    text-align: center;
+}
+
+.number {
+    color: #EEE;
+    font-size: 1.8rem;
+}
