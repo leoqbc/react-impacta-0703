@@ -1,6 +1,7 @@
 body {
     background-color: #424242;
     font-family: Arial, Helvetica, sans-serif;
+    color: #EEE;
 }
 
 h1 {
@@ -11,4 +12,12 @@ h1 {
 .number {
     color: #EEE;
     font-size: 1.8rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > li {
+    margin: 8px;
 }

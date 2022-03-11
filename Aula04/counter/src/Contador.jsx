@@ -7,26 +7,39 @@ export default class Contador extends Component {
         // iniciar o estado
         // do contador
         this.state = {
-            valor: 0
+            valor: 0,
+            color: "#EEE"
         };
     }
     subtrair() {
-        console.log('Clicou no botão de menos');
+        if (this.state.valor > 0) {
+            this.setState({
+                valor: this.state.valor - 1
+            });
+        } else {
+            this.setState({
+                color: "red"
+            });
+        }
     }
 
     adicionar() {
-        console.log('Clicou no botão de mais');
+        this.setState({
+            color: "#EEE",
+            valor: this.state.valor + 1
+        });
     }
 
     render() {
         return (
             <div>
-                <button onClick={this.subtrair}> - </button>
+                <div className="number">Valor Atual do contador {this.state.valor}</div>
+                <button onClick={() => this.subtrair()}> - </button>
 
                 {/* aqui definimos a escrita da variavel de estado */}
-                <span className="number"> {this.state.valor} </span>
-                
-                <button onClick={this.adicionar}> + </button>
+                <span className="number" style={{color: this.state.color}}> {this.state.valor} </span>
+
+                <button onClick={() => this.adicionar()}> + </button>
             </div>
         );
     }
