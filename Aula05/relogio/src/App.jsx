@@ -1,5 +1,6 @@
 import { Component, Fragment } from "react";
 import Relogio from "./Relogio";
+import Formulario from "./Formulario";
 
 // imports React.Component
 
@@ -8,6 +9,7 @@ export default class App extends Component {
         return (
             <>
                 <Relogio />
+                <Formulario />
             </>
         );
     }
