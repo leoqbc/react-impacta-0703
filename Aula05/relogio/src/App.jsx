@@ -1,4 +1,4 @@
-import { Component, Fragment } from "react";
+import { Component } from "react";
 import Relogio from "./Relogio";
 import Formulario from "./Formulario";
 

@@ -9,6 +9,10 @@ export default class Fomulario extends Component {
         };
 
         this.generosLabel = ["", "Masculino", "Feminino", "Outros"];
+
+        // Envia o this para a função para ter acesso
+        // internamente
+        // this.handleSubmit = this.submit.bind(this);
     }
 
     inputChange(event) {
