@@ -1,0 +1,19 @@
+------- cabeçalho --------
+GET / HTTP/1.1
+Host www.google.com.br
+
+----- Corpo da requisição -----
+nome=Leonardo&email=tumadjian@gmail.com
+
+
+POST /clientes HTTP/1.1
+Host meusite.com.br
+Content-Type: application/json
+
+nome=
+
+------ Resposta -----
+HTTP/1.1 200 OK
+...
+
+Corpo com conteúdo
