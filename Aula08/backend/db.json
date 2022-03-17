@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "nome": "Robson de Almeida"
+    },
+    {
+      "nome": "Pedro Faria",
+      "id": 5
+    },
+    {
+      "nome": "Marcio de Freitas",
+      "id": 7
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "nome": "O Senhor Do Anéis"
+    },
+    {
+      "id": 2,
+      "nome": "O Hobbit"
+    },
+    {
+      "id": 3,
+      "nome": "Game Of Thrones"
+    }
+  ],
+  "reserva": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "book_id": 3
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "book_id": 2
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "book_id": 1
+    }
+  ]
+}
