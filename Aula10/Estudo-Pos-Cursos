@@ -1,0 +1,17 @@
+Novidades do NodeJS (ES 22)
+
+React Context (Alternativa simples ao Redux)
+
+Typescript (Javascrit com tipagem obrigatória, pracisa de um transpiler)
+
+React Hooks de performance, useMemo, Memo, useCallback
+
+Teste em React com Jest (testes de comportamento dos componentes)
+
+Design Systems (com StoryBook)
+
+Styled Components
+
+NextJS - Static Site Rendering(SSR) e Static Site Generator(SSG)
+
+Backend - Typescript com NestJS(Framework)
